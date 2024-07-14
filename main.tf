@@ -80,4 +80,6 @@ resource "aws_instance" "biaTF" {
   }
 
 #Comando para mudar a variavel do variables somente na execução do apply ( terraform apply -var 'instance_name=biaTF-2' )
-#Comando para mudar a variavel do variables e no momento da criação da EC2 ( terraform apply -var 'instance_name=biaTF-2' -var 'ami=ami-0b72123ee41605393' )  
+#Comando para mudar a variavel do variables e no momento da criação da EC2 ( terraform apply -var 'instance_name=biaTF-2' -var 'ami=ami-0b72123ee41605393' )
+#Comando para mostrar  informaçes sobre recurso especifico ( terraform state show aws_security_group.SG-Terraform )
+#Comando para mostrar  informaçes sobre recurso especifico ( terraform state show aws_instance.biaTF )
