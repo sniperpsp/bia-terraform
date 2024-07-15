@@ -59,8 +59,8 @@ resource "aws_instance" "biaTF" {
       description = "Permitindo acesso a porta https"
     }
     ingress {
-      from_port = 3001
-      to_port = 3001
+      from_port = 3002
+      to_port = 3002
       protocol = "tcp"
       cidr_blocks = ["0.0.0.0/0"]
       description = "Permitindo acesso a porta 3001 para o mundo"
