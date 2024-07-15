@@ -19,10 +19,10 @@ Siga as instruções para inserir suas credenciais AWS, região padrão e format
 Este é o arquivo principal do Terraform, onde são definidos os recursos a serem criados na AWS.
 
 - **Bloco `terraform`**: Define os provedores necessários e a versão mínima do Terraform.  
-- **Bloco `provider "aws"`**: Configura o provedor AWS com a região e o perfil no meu caso o perfil é `bia` no seu caso coloque o nome do seri perfil.  
+- **Bloco `provider "aws"`**: Configura o provedor AWS com a região e o perfil no meu caso o perfil é `bia` no seu caso coloque o nome do seu perfil.  
 - **Recurso `aws_instance "biaTF"`**: Cria uma instância EC2 com as especificações fornecidas, incluindo AMI, tipo de instância, grupos de segurança, sub-rede e tags.
 - **Recurso `aws_security_group "SG-Terraform"`**: Define um grupo de segurança com regras de entrada e saída.
-- **AMI** ela tambem deve ser alterada para uma AMI valida, caso não tenha nenhuma vá para o market place da AWS e procure pelo nome da distribuição que você quer, no meu caso foi o Amazon Linux 2024.03.1
+- **AMI** ela também deve ser alterada para uma AMI válida, caso não tenha nenhuma vá para o market place da AWS e procure pelo nome da distribuição que você quer, no meu caso foi o Amazon Linux 2024.03.1
 
 ### `variables.tf`
 
